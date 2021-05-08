@@ -1,0 +1,757 @@
+//@import url(https://allfont.ru/allfont.css?fonts=montserrat);
+*{
+    box-sizing: border-box;
+}
+body{
+    color:black;
+    font-family: 'Montserrat', Light;
+}
+
+header{
+    background-image: url('../img/headerBack.png');
+    background-size: contain;
+    height: 630px;
+    .headerOverlay{
+        position: absolute;
+        left:0;
+        top:0;
+        right: 0;
+        bottom:0;
+        background: rgba(182,218,240,0.6);
+        height:inherit;
+        z-index: 1;
+        .headerTop{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 35px;
+            .logo{
+                font-family: 'Montserrat', light;
+                font-size: 44px;
+                color:#1c5d98;
+            }
+            .phoneSocial{
+                display: flex;
+                .numberCall{
+                    position: relative;
+                    .phone{
+                        color:#000000;
+                        font-size: 21px;
+                        font-family: 'Montserrat', Black;
+                        display: block;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                    .callImg{
+                        position: absolute;
+                        left:-33px;
+                        top:23px;
+                    }
+                    .callLink{
+                        color:black;
+                        font-family: 'Montserrat', Bold;
+                        font-weight: bold;
+                        border-bottom: 2px dotted;
+                        text-decoration: none;
+                    }
+                }
+                .socialIcons{
+                    margin-left: 10px;
+                    padding-top: 7px;
+                }
+            }
+        }
+
+        .mainImg{
+            left: 0;
+            position: absolute;
+            bottom: -60px;
+            width:100%;
+            height:680px;
+            width:auto;
+        }
+        .naladka{
+            position: absolute;
+            top:46%;
+            left:42%;
+            h1{
+                font-size:52px;
+                text-transform: uppercase;
+                color:#0186ff;
+                font-family: 'Montserrat', Black;
+                font-weight: bold;
+            }
+            .equipment{
+                text-transform: uppercase;
+                text-align: center;
+                width:90%;
+                margin: 0 auto;
+                border:8px solid white;
+                transform:skew(-15deg);
+                height:100px;
+                position: relative;
+                h1{
+                    color:black;
+                    font-size:37px;
+                    transform:skew(15deg);
+                }
+                h4{
+                    font-weight: bold;
+                    font-soze:23px;
+                    transform:skew(15deg);
+                }
+            }
+            .getConsultation{
+                text-align: center;
+            }
+        }
+
+    }
+
+}
+
+#exploitation{
+    padding-top: 154px;
+    .exploTop{
+        .iconItem{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .icon{
+                text-align: center;
+
+            }
+            .text{
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+    .exploBottom{
+        h1{
+            font-family: 'Montserrat', ExtraBold;
+            font-size: 34px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 70px 50px;
+            text-align: center;
+            margin-bottom: 95px;
+
+        }
+        .columns{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            bottom: -80px;
+            .column{
+                box-shadow: 0 3px 10px rgb(0 0 0 / 25%);
+                border-radius: 7px;
+                padding: 130px 20px 20px 20px;
+                width: 31%;
+                text-align: center;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                background: #fff;
+                .img{
+                    margin: 0 auto;
+                    width: 80%;
+                    border: 5px solid #fdc200;
+                    padding: 13px;
+                    transform:skew(-9deg);
+                    display: flex;
+                    justify-content: center;
+                    position: absolute;
+                    margin-top:-240px;
+                    img{
+                        transform:skew(10deg);
+                    }
+                }
+                .title{
+                    font-size:21px;
+                    font-weight: bold;
+                    font-family: 'Montserrat', Bold;
+                    margin:10px 0;
+                }
+                .text{
+                    font-family: 'Montserrat', Regular;
+                }
+            }
+        }
+    }
+
+}
+
+#installation{
+    background: #B6DAF0;
+    height:900px;
+    padding-top: 145px;
+    position: relative;
+    z-index: -1;
+    .instaCont{
+        height:900px;
+    }
+    .borderTitle{
+        transform: skew(9deg);
+        box-shadow: 1px 3px 15px rgb(0 0 0 / 20%);
+        transform: skew(-9deg);
+        border:8px solid white;
+        width:100%;
+        padding:38px;
+        h1{
+            transform: skew(9deg);
+            font-size: 33px;
+            font-family: 'Montserrat', ExtraBold;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+    .leftBlock{
+        background: #fff;
+        width: 60%;
+        position: absolute;
+        z-index: 2;
+        transform: skew( -11deg);
+        padding: 30px;
+        font-size: 17px;
+        border-left:8px solid #fdc200;
+        p{
+            transform:skew(11deg);
+        }
+    }
+    .img{
+        position: absolute;
+        right:0;
+        bottom:50px;
+
+    }
+}
+
+#learning{
+    padding: 65px 0;
+    text-align: center;
+    h1{
+        font-size:33px;
+        font-family: 'Montserrat', ExtraBold;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    h4{
+        font-size:27px;
+        font-family: 'Montserrat', Light;
+        margin-bottom: 55px;
+    }
+    .getConsults{
+        //margin-bottom: -100px;
+        position: relative;
+        .getConsult{
+            box-shadow: 0 2px 46px rgb(0 0 0 / 20%);
+            display: flex;
+            transform:skew(-9deg);
+            padding: 25px;
+            align-items: center;
+            background: #fff;
+            width:90%;
+            margin:0 auto;
+            img{
+                height:63px;
+                transform:skew(9deg);
+            }
+            .center{
+                text-align: left;
+                margin: 0 25px;
+                .title{
+                    font-size: 21px;
+                    transform:skew(9deg);
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                .text{
+                    font-size: 18px;
+                    transform:skew(9deg);
+                    margin-left: 10px;
+                    margin-bottom: 0;
+                }
+            }
+            .button{
+                height:99px;
+                transform:skew(9deg);
+                position: relative;
+                margin-right: -65px;
+                &:after{
+                    content:"asdf";
+                    color:white;
+                }
+            }
+        }
+    }
+
+}
+
+#question{
+    height:300px;
+    background-image: url('../img/headerBack.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    .overlay{
+        position: absolute;
+        left:0;
+        top:0;
+        right: 0;
+        bottom:0;
+        background: linear-gradient(rgba(255,195,0,0.6), rgba(230,81,0,0.6));
+        height:inherit;
+        z-index: 1;
+        h1{
+            font-size:33px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color:white;
+            padding-top: 30px;
+        }
+        h4{
+            font-size: 21px;
+            color:white;
+            padding: 15px 0 25px 0;
+        }
+        input{
+            margin-right: 20px;
+            width:260px;
+        }
+        input, button{
+            border:none;
+            padding: 20px;
+            border-radius: 7px;
+
+        }
+        button{
+            padding: 20px 40px;
+            font-weight: bold;
+            background-image: linear-gradient(#FCFCFC, #B3B3B3);
+        }
+    }
+}
+
+footer{
+    background: #B6DAF0;
+    padding-bottom: 20px;
+    .footerTop{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 35px;
+        .logo{
+            font-family: 'Montserrat', light;
+            font-size: 44px;
+            color:#1c5d98;
+        }
+        .phoneSocial{
+            display: flex;
+            .numberCall{
+                position: relative;
+                .phone{
+                    color:#000000;
+                    font-size: 21px;
+                    font-family: 'Montserrat', Black;
+                    display: block;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+                .callImg{
+                    position: absolute;
+                    left:-2px;
+                    top:23px;
+                }
+                .callLink{
+                    margin-left: 33px !important;
+                }
+                .email{
+                    color:#F37500;
+                    font-family: 'Montserrat', Bold;
+                    //font-weight: bold;
+                    border-bottom: 2px dotted;
+                    text-decoration: none;
+                    &:before{
+                        content: url(../img/phone.png);
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .socialIcons{
+                margin-left: 10px;
+                padding-top: 7px;
+            }
+        }
+    }
+}
+
+
+
+//MEDIA
+@media(min-width:1200px){
+    .getConsult{
+        .center{
+            .text2{
+                margin-left: 15px !important;
+            }
+        }
+    }
+
+    #installation{
+        .leftBlock{
+            bottom:150px !important;
+        }
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px){
+    .iconItem{
+        .icon2{
+            margin-bottom: 18px !important;
+        }
+    }
+    #exploitation{
+        padding-top: 120px;
+    }
+    #installation{
+        .leftBlock{
+            bottom:145px;
+        }
+    }
+    .getConsult{
+        .center{
+            .text2{
+                margin-left: 17px !important;
+            }
+        }
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    header{
+        height:510px;
+        .mainImg {
+            height:540px !important;
+            //bottom:25px !important;
+        }
+    }
+
+    .naladka{
+        h1{
+            font-size:30px !important;
+        }
+        .equipment{
+            padding: 10px;
+            width:96% !important;
+            h1{
+                font-size:28px !important;
+            }
+            h4{
+                font-size:20px !important;
+            }
+        }
+    }
+    .iconItem{
+        .icon2{
+            margin-bottom: 20px !important;
+        }
+    }
+    .exploBottom h1{
+        font-size:30px !important;
+        margin: 45px 50px !important;
+        margin-bottom: 45px !important;
+    }
+    .column img{
+        width:130%;
+    }
+    #installation{
+        .leftBlock{
+            bottom:80px !important;
+        }
+        .img{
+            bottom:25px !important;
+        }
+    }
+    #exploitation{
+        padding-top: 120px;
+        .column{
+            padding: 110px 20px 20px 20px !important;
+            .img{
+                margin-top: -205px !important;
+            }
+        }
+    }
+    #learning{
+        h1{
+            font-size:30px !important;
+        }
+        .getConsult{
+            width:85% !important;
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .header{
+        display: block !important;
+        .headerTop{
+            background: url(../img/headMob.png);
+            background-size: cover;
+            flex-direction: row;
+            padding-bottom:15px;
+            .logo{
+                font-family: 'Montserrat', light;
+                font-size: 44px;
+                color:#1c5d98;
+                text-align:center;
+            }
+            .phoneSocial{
+                display: flex;
+                justify-content: space-around;
+                .numberCall{
+                    position: relative;
+                    .phone{
+                        color:#000000;
+                        font-size: 21px;
+                        font-family: 'Montserrat', Black;
+                        display: block;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                    .callImg{
+                        position: absolute;
+                        left:-2px;
+                        top:23px;
+                    }
+                    .callLink{
+                        color:black;
+                        font-family: 'Montserrat', Bold;
+                        font-weight: bold;
+                        border-bottom: 2px dotted;
+                        text-decoration: none;
+                        margin-left: 33px;
+                    }
+                }
+                .socialIcons{
+                    margin-left: 10px;
+                    padding-top: 7px;
+                }
+            }
+        }
+        .headerBody{
+            background: url(../img/headerMain2.png);
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            position: relative;
+            .naladka{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                h1{
+                    color:#0186ff;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                .equipment{
+                    text-align: center;
+                    width: unset !important;
+                    padding: 0 20px;
+                    transform: skew(-9deg);
+                    border:4px solid #fff;
+                    h1{
+                        transform: skew(9deg);
+                    }
+                    h4{
+                        transform:skew(9deg);
+                    }
+                }
+                .getConsultation{
+                    img{
+                        width:170px;
+                    }
+                }
+            }
+        }
+    }
+    header{
+        height:440px !important;
+        display: none !important;
+        .headerTop{
+            //flex-direction: column;
+            padding-top: 5px !important;
+            text-align: center;
+            .phoneSocial{
+                .callImg{
+                    left:-13px !important;
+                }
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .mainImg{
+        display: none;
+    }
+    .mainImg2{
+        display:block !important;
+        margin-top: 15px !important;
+        position: absolute !important;
+        left:0 !important;
+        right:0 !important;
+        width:100% !important;
+        z-index: -1;
+    }
+    .naladka{
+        top:60% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+        width:100%;
+        h1{
+            font-size:30px !important;
+            text-align:center;
+        }
+        .equipment{
+            width:60% !important;
+            background: rgba(0,0,0,0.5) !important;
+            h1{
+                color:white !important;
+                font-size:25px !important;
+                padding-top: 10px !important;
+            }
+            h4{
+                font-size: 18px !important;
+                color:white !important;
+            }
+        }
+    }
+    #exploitation {
+        padding-top: 50px !important;
+        .iconItem{
+            margin-bottom:15px !important;
+        }
+        .exploBottom{
+            h1{
+                margin: 30px 50px !important;
+                font-size:25px !important;
+            }
+            .columns{
+                display: flex !important;
+                flex-direction: column !important;
+                bottom:0;
+                .column{
+                    width:90% !important;
+                    margin:0 auto 40px !important;
+                    padding:260px 20px 20px !important;
+                    .img{
+                        margin-top: -230px;
+                        width:70%;
+                    }
+                    .title{
+                        margin: 25px 0 ;
+                    }
+                }
+            }
+        }
+    }
+    #installation{
+        height:auto;
+        padding-bottom: 50px;
+        padding-top:45px !important;
+        .borderTitle{
+            transform:skew(0deg) !important;
+            margin-bottom: 20px;
+            h1{
+                transform:skew(0deg) !important;
+                font-size:25px !important;
+            }
+        }
+        .leftBlock{
+            width:100% !important;
+            margin-top: 40px;
+            position: relative;
+            transform:skew(0);
+            border-left: 0;
+            margin:0 auto;
+            margin-left: 0 !important;
+            p{
+                transform:skew(0) ;
+            }
+        }
+        .img1{
+            display: block !important;
+            width:100%;
+            margin:0 auto;
+        }
+        .img{
+            display:none !important;
+        }
+    }
+
+    #learning{
+        h1, h4{
+            font-size:25px;
+        }
+        .getConsult{
+            display: block !important;
+            transform:skew(0) !important;
+            img{
+                transform:skew(0) !important;
+            }
+            .center{
+                .title, .text{
+                    transform:skew(0) !important;
+                }
+                .title{
+                    text-align: center;
+                }
+                .text{
+                    text-align: justify;
+                }
+            }
+            .button{
+                margin: 0 auto !important;
+            }
+        }
+    }
+    #question{
+        height:350px;
+        h1{
+            font-size:24px !important;
+        }
+        h4{
+            font-size:19px !important;
+        }
+        input, button{
+            padding:15px 40px !important;
+        }
+        input{
+            margin-right: 0 !important;
+        }
+        input, button{
+            margin-bottom: 5px !important;
+            width: 90% !important;
+        }
+    }
+
+    footer{
+        .footerTop{
+            flex-direction: column;
+            text-align: center;
+            .ip{
+                margin-bottom: 10px;
+            }
+            .phoneSocial{
+                flex-direction: column;
+                text-align: column;
+                .callImg{
+                    left:130px !important;
+                }
+            }
+        }
+    }
+}
