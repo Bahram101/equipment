@@ -335,6 +335,45 @@ header{
     }
 }
 
+.getConsultModal{
+    transition:0.5s;
+    border-right: 5px;
+    p{
+        margin-bottom: 0;
+    }
+    input{
+        margin-right: 5px;
+        width:260px;
+        border: 2px solid orange;
+        padding: 13px;
+        border-radius: 7px;
+    }
+    button{
+        padding: 13px 40px;
+        border:none;
+        padding: 13px;
+        border-radius: 7px;
+        font-weight: bold;
+        background-image: linear-gradient(#FFC100, #F37300);
+        color:white;
+    }
+    .fancybox-button{
+        display: none;
+    }
+
+}
+#success{
+    position: fixed;
+    top: 201px;
+    background: white;
+    left: 50%;
+    width: 80%;
+    height: 125px;
+    margin: 0 auto;
+    transform: translate(-50%);
+    border-radius: 5px;
+}
+
 footer{
     background: #B6DAF0;
     padding-bottom: 20px;
@@ -494,6 +533,21 @@ footer{
 }
 
 @media(max-width:767px) {
+    header{
+        height:440px !important;
+        display: none !important;
+        .headerTop{
+            //flex-direction: column;
+            padding-top: 5px !important;
+            text-align: center;
+            .phoneSocial{
+                .callImg{
+                    left:-13px !important;
+                }
+                justify-content: space-between;
+            }
+        }
+    }
     .header{
         display: block !important;
         .headerTop{
@@ -578,22 +632,6 @@ footer{
             }
         }
     }
-    header{
-        height:440px !important;
-        display: none !important;
-        .headerTop{
-            //flex-direction: column;
-            padding-top: 5px !important;
-            text-align: center;
-            .phoneSocial{
-                .callImg{
-                    left:-13px !important;
-                }
-                justify-content: space-between;
-            }
-        }
-    }
-
     .mainImg{
         display: none;
     }
@@ -629,6 +667,7 @@ footer{
             }
         }
     }
+
     #exploitation {
         padding-top: 50px !important;
         .iconItem{
@@ -658,6 +697,7 @@ footer{
             }
         }
     }
+
     #installation{
         height:auto;
         padding-bottom: 50px;
@@ -718,6 +758,7 @@ footer{
             }
         }
     }
+
     #question{
         height:350px;
         h1{
@@ -753,5 +794,24 @@ footer{
                 }
             }
         }
+    }
+
+    .getConsultModal{
+        width:90%;
+        border-radius: 5px;
+        transition:0.5s;
+        p{
+            margin-bottom: 0;
+        }
+        input, button{
+            margin-right:0;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .fancybox-button{
+            display: none;
+        }
+            
+
     }
 }

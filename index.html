@@ -11,6 +11,7 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:Light' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
 <body>
 
@@ -41,13 +42,12 @@
                     <h4>оборудование</h4>
                 </div>
                 <div class="getConsultation">
-                    <a href=""><img src="img/get-cons.png" alt=""></a>
+                    <a href="#modal-1" class="getConsult"><img src="img/get-cons.png" class="" alt=""></a>
                 </div>
             </div>
-            <img src="img/headerMain2.png" class="mainImg2 d-none img-fluid" alt="">
+            <a href="" ><img src="img/headerMain2.png" class="mainImg2 d-none img-fluid getConsult" alt=""></a>
         </div>
     </div>
-
 </header>
 
 <div class="header d-none">
@@ -74,7 +74,9 @@
                 <h4>оборудование</h4>
             </div>
             <div class="getConsultation">
-                <a href=""><img src="img/get-cons.png" alt=""></a>
+                <a href="#modal-1" class="getConsult">
+                    <img src="img/get-cons.png" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -220,10 +222,8 @@
         <div class="container">
             <h1>У вас есть вопросы?</h1>
             <h4>Заполните форму и наши специалисты свяжутся с вами в течении 15 минут</h4>
-            <form action="">
-                <input type="text" placeholder="Ваш номер">
-                <button>Отправить</button>
-            </form>
+            <input type="text" placeholder="Ваш номер">
+            <button>Отправить</button>
         </div>
     </div>
 </div>
@@ -250,6 +250,71 @@
     </div>
 </footer>
 
+<div id="modal-1" class="getConsultModal" >
+    <input type="text" placeholder="Ваш имя" name="name" class="name" required>
+    <input type="text" placeholder="Ваш номер" name="phone" class="number" required>
+    <button name="getConsult" class="send">Отправить</button>
+</div>
 
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+
+
+    $('.send').click(function(){
+            var name = $('.name').val();
+            var number = $('.number').val();
+            if(name && number){
+                $.ajax({
+                    method:"post",
+                    url:"send.php",
+                    data:{
+                        name:name,
+                        number:number
+                    }
+                }).done(
+                    setTimeout(function(){
+                    $('.getConsultModal').html('<p style="color:#2ecc71;font-size:22px;font-weight:bolder">Сообщение успешно отправлено!</p>')
+                        .css('border-radius', '5px')
+                        .css('transition', '0.5s')
+                        .css('padding', '20px')
+                        .css('text-align', 'center')
+                }, 2000));
+
+                function rmv(){
+                    $('.fancybox-container').remove()
+                }
+                setTimeout(rmv, 5000);
+
+                function loadPage(){
+                    location.reload();
+                }
+                setTimeout(loadPage, 5000)
+            }
+
+    });
+
+
+    $(function(){
+        $(".getConsult").fancybox({
+            margin: 0,
+            padding: 20,
+            maxWidth: 400,
+            autoScale: true,
+            transitionIn: 'none',
+            transitionOut: 'none',
+            type: 'inline',
+            helpers: {
+                overlay: {
+                    locked: false
+                }
+            }
+        });
+    });
+
+    
+
+</script>
 </body>
 </html>

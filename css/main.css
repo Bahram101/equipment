@@ -321,6 +321,45 @@ header .headerOverlay .naladka .getConsultation {
   background-image: linear-gradient(#FCFCFC, #B3B3B3);
 }
 
+.getConsultModal {
+  transition: 0.5s;
+  border-right: 5px;
+}
+.getConsultModal p {
+  margin-bottom: 0;
+}
+.getConsultModal input {
+  margin-right: 5px;
+  width: 260px;
+  border: 2px solid orange;
+  padding: 13px;
+  border-radius: 7px;
+}
+.getConsultModal button {
+  padding: 13px 40px;
+  border: none;
+  padding: 13px;
+  border-radius: 7px;
+  font-weight: bold;
+  background-image: linear-gradient(#FFC100, #F37300);
+  color: white;
+}
+.getConsultModal .fancybox-button {
+  display: none;
+}
+
+#success {
+  position: fixed;
+  top: 201px;
+  background: white;
+  left: 50%;
+  width: 80%;
+  height: 125px;
+  margin: 0 auto;
+  transform: translate(-50%);
+  border-radius: 5px;
+}
+
 footer {
   background: #B6DAF0;
   padding-bottom: 20px;
@@ -459,6 +498,21 @@ footer .footerTop .phoneSocial .socialIcons {
   }
 }
 @media (max-width: 767px) {
+  header {
+    height: 440px !important;
+    display: none !important;
+  }
+  header .headerTop {
+    padding-top: 5px !important;
+    text-align: center;
+  }
+  header .headerTop .phoneSocial {
+    justify-content: space-between;
+  }
+  header .headerTop .phoneSocial .callImg {
+    left: -13px !important;
+  }
+
   .header {
     display: block !important;
   }
@@ -540,21 +594,6 @@ footer .footerTop .phoneSocial .socialIcons {
   }
   .header .headerBody .naladka .getConsultation img {
     width: 170px;
-  }
-
-  header {
-    height: 440px !important;
-    display: none !important;
-  }
-  header .headerTop {
-    padding-top: 5px !important;
-    text-align: center;
-  }
-  header .headerTop .phoneSocial {
-    justify-content: space-between;
-  }
-  header .headerTop .phoneSocial .callImg {
-    left: -13px !important;
   }
 
   .mainImg {
@@ -713,5 +752,22 @@ footer .footerTop .phoneSocial .socialIcons {
   }
   footer .footerTop .phoneSocial .callImg {
     left: 130px !important;
+  }
+
+  .getConsultModal {
+    width: 90%;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  .getConsultModal p {
+    margin-bottom: 0;
+  }
+  .getConsultModal input, .getConsultModal button {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .getConsultModal .fancybox-button {
+    display: none;
   }
 }
